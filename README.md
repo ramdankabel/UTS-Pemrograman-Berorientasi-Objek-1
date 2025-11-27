@@ -9,5 +9,5 @@ Kelas		:	TIF K 24A
 
 Link GitHub	:  https://github.com/ramdankabel/UTS-Pemrograman-Berorientasi-Objek-1/tree/main
 
-Lik YouTube	:
+Lik YouTube	:  https://youtu.be/2brDdQy7hhw
 
