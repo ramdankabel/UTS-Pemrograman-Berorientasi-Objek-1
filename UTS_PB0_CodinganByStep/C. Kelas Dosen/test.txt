@@ -3,7 +3,7 @@ public class Main {
 
         Dosen ds = new Dosen(
             "Siti Maryam, S.Kom.",
-            "sitimaryam@utb-univ.ac.id,
+            "sitimaryam@utb-univ.ac.id",
             "Bandung",
             "08123456789",
             "D98765",
