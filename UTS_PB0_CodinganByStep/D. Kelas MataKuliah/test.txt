@@ -1,0 +1,8 @@
+public class Main {
+    public static void main(String[] args) {
+
+        MataKuliah mk = new MataKuliah("MK001", "Pemrograman Berorientasi Objek 1", 3);
+
+        mk.tampilkanInfo();
+    }
+}

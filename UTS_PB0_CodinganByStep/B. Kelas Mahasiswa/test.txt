@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Mahasiswa m = new Mahasiswa(
+            "Muhammad Ramdan",
+            "ramdankabel@gmail.com",
+            "Tasikmalaya",
+            "082118427261",
+            "M12345",
+            "Teknik Informatika",
+            3.55
+        );
+
+        m.tampilkanInfo();
+
+        MataKuliah mk = new MataKuliah("Pemrograman Berorientasi Objek");
+        m.ambilMataKuliah(mk);
+    }
+}

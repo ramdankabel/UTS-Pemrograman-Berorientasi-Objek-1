@@ -1,0 +1,67 @@
+public class Mahasiswa extends User {
+
+    private String nim;
+    private String jurusan;
+    private double ipk;
+
+    // Constructor
+    public Mahasiswa(String nama, String email, String alamat, String noHP,
+                     String nim, String jurusan, double ipk) {
+
+        super(nama, email, alamat, noHP);  // panggil constructor User
+
+        setNim(nim);
+        setJurusan(jurusan);
+        setIpk(ipk);
+    }
+
+    // Getter & Setter dengan validasi
+
+    public String getNim() {
+        return nim;
+    }
+
+    public void setNim(String nim) {
+        // harus diawali huruf M dan diikuti angka -> contoh M12345
+        if (nim == null || !nim.matches("M\\d+")) {
+            throw new IllegalArgumentException("NIM harus diawali huruf 'M' dan diikuti angka!");
+        }
+        this.nim = nim;
+    }
+
+    public String getJurusan() {
+        return jurusan;
+    }
+
+    public void setJurusan(String jurusan) {
+        if (jurusan == null || jurusan.trim().isEmpty()) {
+            throw new IllegalArgumentException("Jurusan tidak boleh kosong!");
+        }
+        this.jurusan = jurusan;
+    }
+
+    public double getIpk() {
+        return ipk;
+    }
+
+    public void setIpk(double ipk) {
+        if (ipk < 0.0 || ipk > 4.0) {
+            throw new IllegalArgumentException("IPK harus antara 0.0 - 4.0!");
+        }
+        this.ipk = ipk;
+    }
+
+    // Override tampilkanInfo()
+    @Override
+    public void tampilkanInfo() {
+        super.tampilkanInfo();  // tampilkan data dari User
+        System.out.println("NIM     : " + nim);
+        System.out.println("Jurusan : " + jurusan);
+        System.out.println("IPK     : " + ipk);
+    }
+
+    // Method ambil mata kuliah
+    public void ambilMataKuliah(MataKuliah mk) {
+        System.out.println("Mahasiswa " + getNama() + " mengambil mata kuliah " + mk.getNamaMatkul());
+    }
+}

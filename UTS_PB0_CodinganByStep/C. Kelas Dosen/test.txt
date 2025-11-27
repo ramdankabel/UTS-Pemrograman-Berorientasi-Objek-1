@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Dosen ds = new Dosen(
+            "Siti Maryam, S.Kom.",
+            "sitimaryam@utb-univ.ac.id,
+            "Bandung",
+            "08123456789",
+            "D98765",
+            "Pemrograman Berorientasi Objek 1"
+        );
+
+        ds.tampilkanInfo();
+        ds.mengajar();
+    }
+}
