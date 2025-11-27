@@ -12,8 +12,6 @@ public class Main {
         );
 
         m.tampilkanInfo();
-
-        MataKuliah mk = new MataKuliah("Pemrograman Berorientasi Objek");
-        m.ambilMataKuliah(mk);
     }
 }
+
